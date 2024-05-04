@@ -2,6 +2,7 @@ from collections import deque
 
 def solve(maze):
     start = maze.start
+    
     end = maze.end
     width = maze.width
     stack = deque([start])

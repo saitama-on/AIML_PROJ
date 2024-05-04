@@ -3,9 +3,7 @@ from collections import deque
 def solve(maze):
     start = maze.start
     end = maze.end
-
     width = maze.width
-
     queue = deque([start])
     shape = (maze.height, maze.width)
     prev = [None] * (maze.width * maze.height)
