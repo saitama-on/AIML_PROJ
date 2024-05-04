@@ -3,9 +3,6 @@ from priority_queue import FibPQ, HeapPQ, QueuePQ
 from contextlib import suppress
 
 
-# This implementatoin of A* is almost identical to the Dijkstra implementation. So for clarity I've removed all comments, and only added those
-# Specifically showing the difference between dijkstra and A*
-
 def solve(maze):
     width = maze.width
     total = maze.width * maze.height
@@ -33,7 +30,7 @@ def solve(maze):
     startnode = FibHeap.Node(0, start)
     nodeindex[start.Position[0] * width + start.Position[1]] = startnode
     unvisited.insert(startnode)
-
+    
     count = 0
     completed = False
 

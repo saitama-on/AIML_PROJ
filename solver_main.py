@@ -3,8 +3,6 @@ import time
 from mazes import Maze
 from utils import Solver_maze
 
-
-
 def solve(utils, method, input_file, output_file):
     # Load Image
     print ("Loading Image")
@@ -75,8 +73,8 @@ def solve(utils, method, input_file, output_file):
 if __name__ == "__main__":
     sf= Solver_maze()
     # method = 'astar'
-    method ="depthfirst"
-    # method=  "breadthfirst"
+    
+    method=  "breadthfirst"
     input_file ="AI-Project---Maze-Solver-master\small.png"
     output_file ="AI-Project---Maze-Solver-master\small_copy.png"
     solve(sf, method, input_file,output_file)
